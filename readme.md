@@ -1,45 +1,76 @@
-## 📊 Chat Médico com Flask e API Gemini 
+<h1 align="center">🩺 CHAT MÉDICO - FLASK & GEMINI</h1>
 
-Este é um **chat interativo sobre sintomas de saúde**, desenvolvido como parte de um **trabalho para a faculdade**. A aplicação foi criada com **Python e Flask**, integrando a **API Gemini (Google Generative AI)** para fornecer sugestões inteligentes baseadas nos sintomas descritos pelo usuário.
+<p align="center"><em>Diagnósticos iniciais com inteligência artificial – simples, educativo e interativo</em></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/último%20commit-junho-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/python-100%25-yellow?style=flat-square" />
+  <img src="https://img.shields.io/badge/tecnologias-5-blue?style=flat-square" />
+</p>
+
+<h3 align="center">Tecnologias e ferramentas utilizadas:</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Gemini%20API-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+</p>
+
+---
+
+## 📋 Sobre o Projeto
+
+O **Chat Médico com Flask e Gemini** é uma aplicação web que simula um atendimento inicial sobre sintomas de saúde. Desenvolvido com fins acadêmicos, ele utiliza **Python + Flask** no backend e integra a **API Generative AI Gemini (Google)** para respostas personalizadas com base nos sintomas digitados.
+
+O sistema oferece:
+- Reconhecimento de sintomas comuns via base interna.
+- Sugestões de possíveis doenças com base em IA, quando necessário.
+- Interação em tempo real com uma interface web amigável.
+
+---
 
 ## 🧠 Funcionalidades
 
-1. **Identificação do Usuário**: O chat solicita o nome do usuário para iniciar a conversa.
-2. **Reconhecimento de Sintomas Pré-cadastrados**: A aplicação responde com possíveis doenças relacionadas aos sintomas informados, com base em um banco interno.
-3. **Integração com a API Gemini**: Quando o sintoma não está no banco de dados, o sistema consulta a API do Gemini para gerar uma resposta personalizada.
-4. **Interação em Tempo Real**: O usuário pode continuar relatando sintomas ou encerrar a conversa.
-5. **Interface Simples e Intuitiva**: Página web limpa e funcional para facilitar a usabilidade.
+✅ Identificação do usuário ao iniciar o chat  
+✅ Análise de sintomas com base em um banco de dados local  
+✅ Consulta inteligente via API Gemini para sintomas desconhecidos  
+✅ Respostas humanizadas e possibilidade de continuar a conversa  
+✅ Interface simples, responsiva e intuitiva
 
-## 🧑‍💻 Tecnologias Utilizadas
+---
 
-1. **Python + Flask**: Responsáveis pela lógica do backend, controle de rotas e integração com a API.
-2. **HTML + CSS + JavaScript**: Estruturação e interação da interface com o usuário.
-3. **Google Generative AI (Gemini)**: Inteligência artificial generativa que sugere doenças com base nos sintomas digitados.
+## 🚀 Como Executar o Projeto
 
-## ⚙️ Como Usar
+1. **Instale as dependências**
+```bash
+python -m pip install -r requirements.txt
+```
 
-1. **Instale as dependências**:
-   python -m pip install -r requirements.txt
+2. **Configure sua chave da API Gemini**
+```bash
+# Abra o arquivo app.py e adicione sua chave:
+genai.configure(api_key="SUA_CHAVE_AQUI")
+```
 
+3. **Execute o servidor Flask**
+```bash
+python app.py
+```
 
-2. **Adicione sua chave da API Gemini no arquivo `app.py`**:
-   genai.configure(api_key="SUA_CHAVE_AQUI")
+4. **Acesse no navegador**
 
+<h2>❗ Nota Importante</h2>
+  <p><strong>Este projeto é destinado apenas para fins de testes e aprendizado.</strong>
 
-3. **Execute a aplicação**:
-   python app.py
- 
+<h2>📦 Versão</h2>
+<p>1.0.0</p>
 
-4. **Interaja com o chat**:
-   - Acesse `http://127.0.0.1:5000` no navegador.
-   - Informe seu nome.
-   - Digite os sintomas (ex: febre, dor de cabeça).
-   - Receba sugestões da base de dados ou da IA (Gemini).
-   - Continue a conversa ou digite “não” para encerrar.
+<h2>📄 Licença</h2>
+<p>Esse projeto está sob a licença MIT.</p>
 
-## ⚠️ Observações
-
-- O projeto foi feito para fins **educacionais** e não substitui um diagnóstico médico profissional.
-- As respostas são geradas com base em informações gerais e inteligência artificial, sem análise clínica real.
-
-
+## Contato ##
+Giovana Marques Silva <br>
+giovanamarquessilva24@gmail.com
