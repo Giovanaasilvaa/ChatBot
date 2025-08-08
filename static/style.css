@@ -21,17 +21,18 @@ body.dark-mode {
     background: url('fundo6.png') no-repeat center center fixed;
 }
 
+
 #theme-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
     background: #007bff;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     transition: background 0.3s, transform 0.2s ease-in-out;
     font-family: 'Montserrat', sans-serif;
 }
@@ -106,6 +107,49 @@ body.dark-mode {
 
 .dark-mode .no-btn:hover {
     background: #b02a37;
+}
+
+.dark-mode .home-container{
+    background-color:rgba(93, 93, 179, 0.8);
+}
+
+.dark-mode .home-container h1 {
+    color: #ffffff;
+}
+
+.dark-mode .home-container p{
+    color: #dddddd;
+}
+
+.home-container {
+  text-align: center;
+  background-color: rgba(213, 213, 242, 0.8);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  color: rgb(11, 10, 10);
+}
+
+.home-container h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.home-container button {
+  background-color: #51a7e8;
+  border: none;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.home-container button:hover {
+  background-color: #3a83c1;
 }
 
 h1 {
@@ -274,4 +318,45 @@ button:hover {
     margin: 10px auto;
     max-width: 80%;
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+    
+    #chatbox {
+        height: 400px;
+    }
+    
+    .message {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .home-container button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    #chatbox {
+        height: 350px;
+    }
+    
+    input[type="text"], button {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    #theme-toggle {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
 }
