@@ -71,7 +71,8 @@ python app.py
 <h2>📄 License</h2>
 <p>This project is licensed under the MIT License.</p>
 
-## Contato ##
+## Contact ##
 Giovana Marques Silva <br>
 giovanamarquessilva24@gmail.com
+
 
